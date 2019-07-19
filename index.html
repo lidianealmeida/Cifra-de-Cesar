@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cypher</title>
+    <link href="./src/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+      <h1 class="maintitle">CIFRA DE CÉSAR</h1>
+    <div>
+      <p><strong>Digite para criptografar e na sequência descriptografar sua mensagem:</strong> </p><input type="text" id="texto">
+      <p><strong>Selecione um número para o deslocamento do texto:</strong></p><input type="number" id="deslocamento">
+    </div>
+
+    <div>
+      <br>
+      <button class=button1 onclick="cifrar()">Codificar</button>
+      <button class=button1 onclick="decifrar()">Decifrar</button>
+    </div>
+
+          <br></br>
+
+    <div>
+      <p><label for="textocifrado"><strong>Veja sua mensagem:</strong></label></p>
+      <textarea id="textocifrado" name="Seu Texto"></textarea>
+
+      <script src="./src/cipher.js"></script>
+      <script src="./src/tests.js"></script>
+
+  </body>
+</html>
